@@ -2,9 +2,16 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
-import store from "./store";
+import store from "./store"
+
+import { VueHammer } from 'vue2-hammer'
+import sorosis from 'sorosis';
+
+Vue.use(sorosis);
+Vue.use(VueHammer);
 
 Vue.config.productionTip = false;
+
 
 new Vue({
   router,
