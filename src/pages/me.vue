@@ -1,6 +1,6 @@
 <template>
   <article>
-    <button  v-hammer:tap="onTap"></button>
+    <!-- <button  v-hammer:tap="onTap"></button> -->
     <!-- <user-item></user-item> -->
     <so-list style="margin-top: .8rem" v-for="(array,index) in list" :key="index" :listData="array"></so-list>
   </article>
@@ -48,8 +48,8 @@ export default {
       ]
     };
   },
-  methods:{
-    onTap:function(){
+  methods: {
+    onTap: function() {
       console.log("hammer tap function");
     }
   }
